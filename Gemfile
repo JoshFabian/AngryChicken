@@ -40,3 +40,16 @@ gem 'unicorn'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Development and production instrumentation.
+gem 'rack-mini-profiler'
+
+# Add schema comments.
+gem 'annotate'
+
+group :development do
+  # Better error pages.
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
