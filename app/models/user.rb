@@ -17,11 +17,29 @@ class User < ActiveRecord::Base
   has_secure_password
   before_save :ensure_auth_token_exists
 
-  validates :username, presence: true
-                       uniqueness: {case_sensitive: false},
-                       length: {minimum: 3, maximum: 15},
-                       format: {with: /\A[_A-Za-z0-9]+\z/,
-                                message: "can only contain alphabets, numbers and underscores"}
+  # Username validation.
+  validates :username,
+    presence: true,
+    uniqueness: {case_sensitive: false},
+    length: {minimum: 3, maximum: 15},
+    format: {with: /\A[_A-Za-z0-9]+\z/,
+             message: "can only contain alphabets, numbers and underscores"}
+
+  INVALID_USERNAMES = %w(
+    admin administrator angrychicken connect dashboard developer developers edit
+    favorites feature featured features feed follow followers following index
+    javascript json sysadmin sysadministrator unfollow user users wiki you
+  )
+
+  validate :username_starts_with_alphanumeric_and_is_not_reserved
+  def username_starts_with_alphanumeric_and_is_not_reserved
+    if username[0,1] =~ /[^A-Za-z0-9]/
+      errors.add(:username, "must begin with an alphabet or number")
+    end
+    if INVALID_USERNAMES.include? username.downcase
+      errors.add(:username, "is reserved")
+    end
+  end
 
   # Generate auth token if it doesn't exist.
   def ensure_auth_token_exists
