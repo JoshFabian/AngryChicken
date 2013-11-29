@@ -10,6 +10,7 @@
 #  last_seen_at       :datetime
 #  created_at         :datetime
 #  updated_at         :datetime
+#  auth_token         :string(255)
 #
 
 class User < ActiveRecord::Base
