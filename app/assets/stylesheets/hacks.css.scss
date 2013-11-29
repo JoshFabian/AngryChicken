@@ -1,0 +1,4 @@
+// Prevent miniprofiler from obscuring the header.
+.profiler-results {
+  top: 51px !important;
+}
