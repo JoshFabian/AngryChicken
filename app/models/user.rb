@@ -15,8 +15,13 @@
 
 class User < ActiveRecord::Base
   has_secure_password
-
   before_save :ensure_auth_token_exists
+
+  validates :username, presence: true
+                       uniqueness: {case_sensitive: false},
+                       length: {minimum: 3, maximum: 15},
+                       format: {with: /\A[_A-Za-z0-9]+\z/,
+                                message: "can only contain alphabets, numbers and underscores"}
 
   # Generate auth token if it doesn't exist.
   def ensure_auth_token_exists
