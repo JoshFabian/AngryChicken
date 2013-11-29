@@ -2,3 +2,8 @@
 .profiler-results {
   top: 51px !important;
 }
+
+// Body needs padding because of the header.
+body {
+  padding-top: 70px;
+}
