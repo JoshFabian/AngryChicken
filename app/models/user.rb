@@ -14,6 +14,8 @@
 #
 
 class User < ActiveRecord::Base
+  has_secure_password
+
   before_save :ensure_auth_token_exists
 
   # Generate auth token if it doesn't exist.
