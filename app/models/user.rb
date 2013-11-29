@@ -2,15 +2,15 @@
 #
 # Table name: users
 #
-#  id                 :integer          not null, primary key
-#  username           :string(20)       not null
-#  email              :string(255)      not null
-#  encrypted_password :string(255)      not null
-#  auth_token         :string(32)       not null
-#  last_seen_at       :datetime
-#  ip_address         :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
+#  id              :integer          not null, primary key
+#  username        :string(20)       not null
+#  email           :string(255)      not null
+#  password_digest :string(255)      not null
+#  auth_token      :string(32)       not null
+#  last_seen_at    :datetime
+#  ip_address      :string(255)
+#  created_at      :datetime
+#  updated_at      :datetime
 #
 
 class User < ActiveRecord::Base
