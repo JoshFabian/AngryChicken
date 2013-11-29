@@ -15,7 +15,14 @@
 
 class User < ActiveRecord::Base
   has_secure_password
+
+  # Generate auth token if it doesn't exist.
   before_save :ensure_auth_token_exists
+  def ensure_auth_token_exists
+    if self.auth_token.nil? or self.auth_token.length != 32
+      self.auth_token = SecureRandom.hex(16)
+    end
+  end
 
   # Username validation.
   validates :username,
@@ -38,13 +45,6 @@ class User < ActiveRecord::Base
     end
     if INVALID_USERNAMES.include? username.downcase
       errors.add(:username, "is reserved")
-    end
-  end
-
-  # Generate auth token if it doesn't exist.
-  def ensure_auth_token_exists
-    if self.auth_token.nil? or self.auth_token.length != 32
-      self.auth_token = SecureRandom.hex(16)
     end
   end
 end
