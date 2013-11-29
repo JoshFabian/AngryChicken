@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   # Generate auth token if it doesn't exist.
   def ensure_auth_token_exists
     if self.auth_token.nil? or self.auth_token.length != 32
-      self.auth_token = SecureRandom.hex(32)
+      self.auth_token = SecureRandom.hex(16)
     end
   end
 end
