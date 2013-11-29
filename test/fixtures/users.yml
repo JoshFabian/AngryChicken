@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                 :integer          not null, primary key
+#  username           :string(255)
+#  email              :string(255)
+#  encrypted_password :string(255)
+#  auth_token         :string(255)
+#  last_seen_at       :datetime
+#  ip_address         :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  email: MyString
+  encrypted_password: MyString
+  auth_token: MyString
+  last_seen_at: 2013-11-29 14:16:48
+  ip_address: MyString
+
+two:
+  username: MyString
+  email: MyString
+  encrypted_password: MyString
+  auth_token: MyString
+  last_seen_at: 2013-11-29 14:16:48
+  ip_address: MyString
