@@ -1,1 +1,2 @@
-web: bundle exec unicorn
+web:   bundle exec unicorn
+guard: bundle exec guard start -i

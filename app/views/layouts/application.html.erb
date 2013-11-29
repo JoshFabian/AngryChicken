@@ -9,7 +9,7 @@
 
   <!-- Preload models -->
   <script type="text/javascript">
-    window.preloadData = #{(@preload || {}).to_json};
+    window.preloadData = <%= (@preload || {}).to_json %>;
   </script>
 
   <div id="ember-root"></div>

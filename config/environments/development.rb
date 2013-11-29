@@ -29,4 +29,7 @@ AngryChicken::Application.configure do
 
   # Log to STDOUT.
   config.logger = Logger.new(STDOUT)
+
+  # Livereload.
+  config.middleware.use Rack::LiveReload
 end

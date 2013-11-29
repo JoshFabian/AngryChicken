@@ -56,5 +56,8 @@ group :development do
   # Better error pages.
   gem 'better_errors'
   gem 'binding_of_caller'
+  # Live Reloading
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
 end
 
