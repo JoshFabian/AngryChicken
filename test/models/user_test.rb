@@ -7,4 +7,12 @@ class UserTest < ActiveSupport::TestCase
     user.save
     assert_equal user.auth_token.length, 32
   end
+
+  test "secure password" do
+    user = users(:vikhyat)
+    user.password = "vikhyat"
+    user.save
+    assert user.authenticate('vikhyat')
+    assert !user.authenticate('sdgfasfd')
+  end
 end
