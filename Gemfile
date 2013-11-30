@@ -61,5 +61,7 @@ group :development do
   # Live Reloading
   gem 'guard-livereload', require: false
   gem 'rack-livereload'
+  # Preview email in the browser instead of sending it.
+  gem 'letter_opener'
 end
 

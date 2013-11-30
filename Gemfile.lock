@@ -35,6 +35,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    addressable (2.3.5)
     annotate (2.5.0)
       rake
     arel (4.0.1)
@@ -95,6 +96,10 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.8.1)
+    launchy (2.3.0)
+      addressable (~> 2.3)
+    letter_opener (1.1.2)
+      launchy (~> 2.2)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -184,6 +189,7 @@ DEPENDENCIES
   ember-source (= 1.2.0)
   guard-livereload
   jquery-rails
+  letter_opener
   pg
   rack-livereload
   rack-mini-profiler
