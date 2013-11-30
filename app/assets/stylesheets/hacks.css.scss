@@ -7,3 +7,16 @@
 body {
   padding-top: 70px;
 }
+
+nav.navbar {
+  // Active header links styling.
+  a.active {
+    color: #fff;
+  }
+
+  // "or" in the header doesn't need spacing to the left and right.
+  .navbar-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
