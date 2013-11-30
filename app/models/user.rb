@@ -24,6 +24,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  validates :email, uniqueness: {case_sensitive: false}
+  validates :auth_token, uniqueness: true
+
   # Username validation.
   validates :username,
     presence: true,
@@ -35,7 +38,7 @@ class User < ActiveRecord::Base
   INVALID_USERNAMES = %w(
     admin administrator angrychicken connect dashboard developer developers edit
     favorites feature featured features feed follow followers following index
-    javascript json sysadmin sysadministrator unfollow user users wiki you
+    javascript json search sysadmin sysadministrator unfollow user users wiki you
   )
 
   validate :username_starts_with_alphanumeric_and_is_not_reserved
