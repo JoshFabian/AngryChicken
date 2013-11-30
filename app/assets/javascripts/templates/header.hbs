@@ -13,14 +13,13 @@
       <li><a>Decks</a></li>
       <li><a>Tournaments</a></li>
       <li><a>Forums</a></li>
+      <li><a>Create Deck</a></li>
 
       {{#if currentUser.isSignedIn}}
-        <li><a>Create Deck</a></li>
         <li>
           <a>Hello, <strong>vikhyat</strong></a>
         </li>
       {{else}}
-        <li><a>Create Deck</a></li>
         <li>{{#link-to 'register'}}Register{{/link-to}}</a></li>
         <li class="navbar-text">or</li>
         <li>{{#link-to 'login'}}Login{{/link-to}}</li>
