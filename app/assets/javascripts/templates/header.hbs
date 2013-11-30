@@ -20,10 +20,10 @@
           <a>Hello, <strong>vikhyat</strong></a>
         </li>
       {{else}}
-        <li><a>Create Deck</a></li>
-        <li><a>Sign up</a></li>
+        <li>{{#link-to 'register'}}Create Deck{{/link-to}}</li>
+        <li>{{#link-to 'register'}}Register{{/link-to}}</a></li>
         <li class="navbar-text">or</li>
-        <li>{{#link-to 'sign-in'}}Sign in{{/link-to}}</li>
+        <li>{{#link-to 'login'}}Login{{/link-to}}</li>
       {{/if}}
     </ul>
   </div>

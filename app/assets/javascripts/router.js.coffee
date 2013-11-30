@@ -5,5 +5,6 @@ AngryChicken.Router.reopen
 
 AngryChicken.Router.map ()->
   @route 'home', path: '/'
-  @route 'sign-in'
+  @route 'login'
+  @route 'register'
 
