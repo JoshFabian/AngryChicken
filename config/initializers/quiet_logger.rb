@@ -3,7 +3,8 @@ Rails::Rack::Logger.class_eval do
   def call_with_quiet_assets(env)
     previous_level = Rails.logger.level
     if (env['PATH_INFO'].index("/assets/") == 0) or
-       (env['PATH_INFO'].index("mini-profiler-resources") == 0)
+       (env['PATH_INFO'].index("mini-profiler-resources") == 0) or
+       (env['PATH_INFO'].index("/__rack/") == 0)
       Rails.logger.level = Logger::ERROR
     end
 

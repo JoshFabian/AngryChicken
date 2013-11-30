@@ -27,9 +27,6 @@ AngryChicken::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  # Log to STDOUT.
-  config.logger = Logger.new(STDOUT)
-
   # Livereload.
   config.middleware.use Rack::LiveReload
 end

@@ -173,6 +173,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   anjlab-bootstrap-rails!
   annotate
   bcrypt-ruby (~> 3.0.0)
