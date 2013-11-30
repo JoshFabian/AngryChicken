@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'ember-rails'
 gem 'ember-source', '1.2.0'
 
+gem 'active_model_serializers'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
