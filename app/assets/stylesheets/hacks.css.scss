@@ -14,6 +14,11 @@ nav.navbar {
     color: #fff;
   }
 
+  // Don't apply it to dropdown links though!
+  ul.dropdown-menu a.active {
+    color: #000;
+  }
+
   // "or" in the header doesn't need spacing to the left and right.
   .navbar-text {
     margin-left: 0;
