@@ -12,5 +12,5 @@ $("#ember-root").html("");
 
 AngryChicken = Ember.Application.create({
   rootElement: "#ember-root",
-  lastVisitedRoute: 'home'
+  lastVisitedPath: '/'
 });

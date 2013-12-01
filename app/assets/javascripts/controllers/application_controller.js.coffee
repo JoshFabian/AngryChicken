@@ -1,5 +1,5 @@
 AngryChicken.ApplicationController = Ember.Controller.extend
   routeChanged: (->
-    unless @get('currentRouteName') == 'login' or @get('currentRouteName') == 'register'
-      AngryChicken.set('lastVisitedRoute', @get('currentRouteName'))
-  ).observes('currentRouteName')
+    unless @get('currentPath') == 'login' or @get('currentPath') == 'register'
+      AngryChicken.set('lastVisitedPath', window.location.pathname)
+  ).observes('currentPath')

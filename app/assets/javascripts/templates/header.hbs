@@ -16,8 +16,12 @@
       <li><a>Create Deck</a></li>
 
       {{#if currentUser.isSignedIn}}
-        <li>
-          <a>Hello, <strong>vikhyat</strong></a>
+        <li class="dropdown">
+          <a data-toggle="dropdown">Hello, <strong>vikhyat</strong></a>
+          <ul class="dropdown-menu">
+            <li>View Profile</li>
+            <li>Sign out</li>
+          </ul>
         </li>
       {{else}}
         <li>{{#link-to 'register'}}Register{{/link-to}}</a></li>
