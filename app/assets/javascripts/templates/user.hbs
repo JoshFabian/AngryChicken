@@ -4,3 +4,11 @@
   <li>Username: {{username}}</li>
   <li>Email: {{email}}</li>
 </ul>
+
+<h4>Decks:</h4>
+
+<ul>
+  {{#each deck in decks}}
+  <li>{{#link-to 'deck' deck}}{{deck.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
