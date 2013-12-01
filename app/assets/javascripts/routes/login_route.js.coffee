@@ -5,11 +5,14 @@ AngryChicken.LoginRoute = Ember.Route.extend
 
   actions:
     login: ->
-      console.log "submitted"
+      loginRoute = this
+      loginRoute.set 'controller.loading', true
       AngryChicken.Auth.login(@get('controller.username'),
                               @get('controller.password'))
         .then ->
           console.log "success"
+          loginRoute.set 'controller.loading', false
         .fail (message) ->
-          console.log message
+          loginRoute.set 'controller.loading', false
+          loginRoute.set 'controller.error', message
 
