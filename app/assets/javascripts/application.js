@@ -4,6 +4,7 @@
 //= require ember
 //= require ember-data
 //= require_self
+//= require_tree ./lib
 //= require angry_chicken
 
 $("#ember-root").html("");
