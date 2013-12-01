@@ -5,4 +5,5 @@ AngryChicken::Application.routes.draw do
   match '/register' => 'auth#register', via: [:get]
 
   match '/u/:id' => 'users#show', via: [:get]
+  match '/card/:slug' => 'cards#show', via: [:get]
 end

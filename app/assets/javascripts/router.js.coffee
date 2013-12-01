@@ -8,4 +8,5 @@ AngryChicken.Router.map ()->
   @route 'login'
   @route 'register'
   @resource 'user', path: '/u/:id'
+  @resource 'card', path: '/card/:id'
 
