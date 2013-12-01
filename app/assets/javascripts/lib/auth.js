@@ -9,9 +9,21 @@ AngryChicken.Auth = Ember.Object.extend({
   // in the event of failure.
   login: function(username, password) {
     return Ember.RSVP.Promise(function(resolve, reject) {
-      // TODO
-      setTimeout(function() { reject("Not implemented yet.") }, 2000);
+      // TODO: Hook this up.
+      setTimeout(function() {
+        if ((username == "vikhyat") && (password == "password")) {
+          resolve();
+        }
+        else {
+          reject("Invalid credentials.");
+        }
+      }, 2000);
     });
+  },
+
+  // Reset the application to clear the datastore after successful login.
+  resetApplication: function() {
+    AngryChicken.reset();
   }
 
 }).create();

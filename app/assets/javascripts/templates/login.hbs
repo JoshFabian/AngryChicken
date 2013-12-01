@@ -9,7 +9,12 @@
       {{/if}}
       {{#if error}}
         <div class="alert alert-danger">
-          {{error}}
+          <p>{{error}}</p>
+        </div>
+      {{/if}}
+      {{#if success}}
+        <div class="alert alert-success">
+          <p>Successfully logged in!</p>
         </div>
       {{/if}}
     </div>
