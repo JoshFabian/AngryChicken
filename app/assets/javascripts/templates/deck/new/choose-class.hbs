@@ -1,0 +1,7 @@
+<h3>Choose Class</h3>
+
+<ul>
+  {{#each class in classes}}
+    <li><a {{action chooseDeckClass class}}>Create {{class}} Deck</a></li>
+  {{/each}}
+</ul>
