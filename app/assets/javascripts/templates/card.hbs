@@ -1,8 +1,40 @@
-<h3>Card Template</h3>
+<h3>{{name}}</h3>
+<p>{{name}} is (a/an) {{rarity}} {{class}} {{type}} card.</p>
 
-<ul>
-  <li>Name: {{name}}</li>
-  <li>Attack: {{attack}}</li>
-  <li>Defense: {{defense}}</li>
-  <li>Mana cost: {{manaCost}}</li>
-</ul>
+<div class="row">
+  <div class="col-md-8">
+    <div class="well">
+      <img {{bind-attr src=regularImage}}>
+      <img {{bind-attr src=goldImage}}>
+    </div>
+    <div class="well">
+      <h5>How to get</h5>
+      <p>{{howToGet}}</p>
+    </div>
+    <div class="well">
+      <h5>Card Mechanics</h5>
+      <ul>
+        {{#each mechanic in mechanics}}
+        <li>{{mechanic}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="well">
+      <h5>Card Strategy</h5>
+      <p>{{strategy}}</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <ul>
+      <li>Type: {{type}}</li>
+      <li>Class: {{class}}</li>
+      <li>Rarity: {{rarity}}</li>
+      <li>Attack: {{attack}}</li>
+      <li>Health: {{health}}</li>
+      <li>Cost: {{cost}}</li>
+      <li><strong>{{cardText}}</strong></li>
+      <li><em>{{flavorText}}</em></li>
+    </ul>
+  </div>
+</div>
+

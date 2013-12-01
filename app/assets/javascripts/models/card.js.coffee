@@ -1,6 +1,16 @@
 AngryChicken.Card = DS.Model.extend
   name: DS.attr('string')
+  type: DS.attr('string')
+  class: DS.attr('string')
+  rarity: DS.attr('string')
   attack: DS.attr('number')
-  defense: DS.attr('number')
-  manaCost: DS.attr('number')
+  health: DS.attr('number')
+  cost: DS.attr('number')
+  regularImage: DS.attr('string')
+  goldImage: DS.attr('string')
+  cardText: DS.attr('string')
+  flavorText: DS.attr('string')
+  howToGet: DS.attr('string')
+  mechanics: DS.attr('array')
+  strategy: DS.attr('string')
 
