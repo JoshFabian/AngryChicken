@@ -1,3 +1,3 @@
 AngryChicken.User.FIXTURES = [
-  {id: 'vikhyat', username: 'vikhyat'}
+  {id: 'vikhyat', username: 'vikhyat', email: 'c@vikhyat.net'}
 ];
