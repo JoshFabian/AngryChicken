@@ -31,5 +31,5 @@ AngryChicken::Application.configure do
   config.assets.debug = true
 
   # Livereload.
-  config.middleware.use Rack::LiveReload
+  config.middleware.use(Rack::LiveReload, no_swf: true)
 end
