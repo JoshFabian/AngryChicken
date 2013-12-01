@@ -12,6 +12,7 @@ AngryChicken.Auth = Ember.Object.extend({
       // TODO: Hook this up.
       setTimeout(function() {
         if ((username == "vikhyat") && (password == "password")) {
+          window.currentUserUsername = username;
           resolve();
         }
         else {

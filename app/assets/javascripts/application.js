@@ -6,6 +6,7 @@
 //= require_self
 //= require_tree ./lib
 //= require angry_chicken
+//= require fixtures
 
 $("#ember-root").html("");
 
