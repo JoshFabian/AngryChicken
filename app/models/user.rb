@@ -38,7 +38,8 @@ class User < ActiveRecord::Base
   INVALID_USERNAMES = %w(
     admin administrator angrychicken connect dashboard developer developers edit
     favorites feature featured features feed follow followers following index
-    javascript json search sysadmin sysadministrator unfollow user users wiki you
+    javascript json login register search sysadmin sysadministrator unfollow user
+    users wiki you
   )
 
   validate :username_starts_with_alphanumeric_and_is_not_reserved

@@ -7,4 +7,5 @@ AngryChicken.Router.map ()->
   @route 'home', path: '/'
   @route 'login'
   @route 'register'
+  @resource 'user', path: '/u/:id'
 
