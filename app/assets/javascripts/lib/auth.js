@@ -22,6 +22,11 @@ AngryChicken.Auth = Ember.Object.extend({
     });
   },
 
+  // Log the user out.
+  logout: function() {
+    window.currentUserUsername = null;
+  },
+
   // Reset the application to clear the datastore after successful login.
   resetApplication: function() {
     AngryChicken.reset();

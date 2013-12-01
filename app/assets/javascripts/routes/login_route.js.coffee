@@ -14,7 +14,6 @@ AngryChicken.LoginRoute = Ember.Route.extend
           .then ->
             loginRoute.set 'controller.success', true
             loginRoute.set 'controller.loading', false
-            console.log AngryChicken.get('lastVisitedPath')
             window.history.pushState({}, "", AngryChicken.get('lastVisitedPath'))
             AngryChicken.Auth.resetApplication()
           .fail (message) ->

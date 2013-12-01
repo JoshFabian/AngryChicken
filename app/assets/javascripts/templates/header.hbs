@@ -20,7 +20,7 @@
           <a data-toggle="dropdown">Hello, <strong>vikhyat</strong></a>
           <ul class="dropdown-menu">
             <li>{{#link-to 'user' currentUser}}View Profile{{/link-to}}</li>
-            <li><a>Sign out</a></li>
+            <li><a {{action 'logout'}}>Logout</a></li>
           </ul>
         </li>
       {{else}}
