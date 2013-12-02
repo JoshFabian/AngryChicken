@@ -23,7 +23,7 @@ AngryChicken.Card.FIXTURES = [
 ];
 
 AngryChicken.Deck.FIXTURES = [
-  {id: 'vikhyat:the-little-murmage', name: 'The Little Murmage', user: "vikhyat", revisions: [1]}
+  {id: 'vikhyat:the-little-murmage', user: "vikhyat", name: 'The Little Murmage', summary: "Deck Summary (140 Characters or less)", playStyle: "Aggro", visible: true, introduction: "This is the introduction.", startingHand: ['patient-assassin'], startingHandDescription: "Description of the starting hand.", earlyGame: "Early game description", midGame: "Mid game description", lateGame: "Late game description", conclusion: "This is the conclusion", revisions: [1]}
 ];
 
 AngryChicken.DeckRevision.FIXTURES = [

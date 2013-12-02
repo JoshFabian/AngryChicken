@@ -1,4 +1,15 @@
-AngryChicken.Deck= DS.Model.extend
-  name: DS.attr('string')
+AngryChicken.Deck = DS.Model.extend
   user: DS.belongsTo('user')
+  name: DS.attr('string')
+  summary: DS.attr('string')
+  playStyle: DS.attr('string')
+  visible: DS.attr('boolean')
+  introduction: DS.attr('string')
+  startingHand: DS.hasMany('card')
+  startingHandDescription: DS.attr('string')
+  earlyGame: DS.attr('string')
+  midGame: DS.attr('string')
+  lateGame: DS.attr('string')
+  # TODO: Card combos, Hero matchups
+  conclusion: DS.attr('string')
   revisions: DS.hasMany('deckRevision')
