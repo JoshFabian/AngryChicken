@@ -1,4 +1,4 @@
-Hummingbird.ArrayTransform = DS.Transform.extend
+AngryChicken.ArrayTransform = DS.Transform.extend
   serialize: (value) ->
     if Em.typeOf(value) == 'array'
       value
