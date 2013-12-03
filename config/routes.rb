@@ -6,6 +6,6 @@ AngryChicken::Application.routes.draw do
 
   match '/u/:id' => 'users#show', via: [:get]
   match '/card/:slug' => 'cards#show', via: [:get]
-  match '/u/:user_id/:deck' => 'decks#show', via: [:get]
+  match '/u/:user_id/deck/:deck' => 'decks#show', via: [:get]
   match '/decks/new' => 'decks#new', via: [:get]
 end
