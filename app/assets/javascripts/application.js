@@ -4,6 +4,7 @@
 //= require ember
 //= require ember-data
 //= require_self
+//= require vendored
 //= require_tree ./lib
 //= require angry_chicken
 //= require fixtures
