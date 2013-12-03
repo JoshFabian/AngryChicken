@@ -15,7 +15,7 @@ p: em #{summary}
       .panel-body
         each card in startingHand
           link-to 'card' card
-            img style="width: 25%; height: auto" src=card.regularImage
+            img style="width: 25%; height: auto; image-rendering: optimizequality" src=card.regularImage
         hr
         p #{startingHandDescription}
 
