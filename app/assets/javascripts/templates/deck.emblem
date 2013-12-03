@@ -1,0 +1,63 @@
+h3 #{name}
+p: em #{summary}
+
+.row
+  .col-md-8
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Introduction
+      .panel-body
+        p #{introduction}
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Ideal Starting Hand
+      .panel-body
+        each card in startingHand
+          link-to 'card' card
+            img style="width: 25%; height: auto" src=card.regularImage
+        hr
+        p #{startingHandDescription}
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Early Game
+      .panel-body
+        p #{earlyGame}
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Mid Game
+      .panel-body
+        p #{midGame}
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Late Game
+      .panel-body
+        p #{lateGame}
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Card Combos
+      .panel-body
+        p TODO
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Hero Matchups
+      .panel-body
+        p TODO
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title Conclusion
+      .panel-body
+        p #{conclusion}
+
+  .col-md-4
+    .panel.panel-default
+      .panel-body
+        p Voting and sharing stuff.
+      .panel-footer
+        p (A/An) #{playStyle} #{type} deck by #{link-to user.username 'user' user}

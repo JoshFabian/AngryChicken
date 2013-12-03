@@ -2,6 +2,7 @@ AngryChicken.Deck = DS.Model.extend
   user: DS.belongsTo('user')
   name: DS.attr('string')
   summary: DS.attr('string')
+  type: DS.attr('string')
   playStyle: DS.attr('string')
   visible: DS.attr('boolean')
   introduction: DS.attr('string')
