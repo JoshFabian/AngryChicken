@@ -8,6 +8,11 @@ body {
   padding-top: 70px;
 }
 
+// All <a>s are links.
+a {
+  cursor: pointer;
+}
+
 nav.navbar {
   // Active header links styling.
   a.active {
