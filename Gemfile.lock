@@ -188,7 +188,6 @@ DEPENDENCIES
   ember-rails
   ember-source (= 1.2.0)
   guard-livereload
-  jquery-rails
   letter_opener
   pg
   rack-livereload
