@@ -1,0 +1,19 @@
+.row
+  .col-xs-4.col-xs-offset-4
+    h3 Login
+    .form-top-messages
+      if loading
+        .alert.alert-info: p Logging in...
+      if error
+        .alert.alert-danger: p #{error}
+      if success
+        .alert.alert-success: p Successfully logged in!
+    .well
+      form submit="login"
+        .form-group
+          label for="username" Email or Username
+          = input class="form-control" type="text" id="username" value=username
+        .form-group
+          label for="password" Password
+          = input class="form-control" type="password" id="password" value=password
+        button.btn.btn-primary type="submit" Login

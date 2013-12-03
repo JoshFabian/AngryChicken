@@ -22,6 +22,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Ember.
 gem 'ember-rails'
 gem 'ember-source', '1.2.0'
+gem 'emblem-rails', '~> 0.2.1'
 
 gem 'active_model_serializers'
 
