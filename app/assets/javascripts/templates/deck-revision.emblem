@@ -8,9 +8,11 @@
       | Ability
       span.badge #{abilityMembershipCount}
     ul = each abilityMemberships
-      li #{card.name} (#{count})
+      link-to 'card' card
+        li #{card.name} (#{count})
     strong
       | Minions
       span.badge #{minionMembershipCount}
     ul = each minionMemberships
-      li #{card.name} (#{count})
+      link-to 'card' card
+        li #{card.name} (#{count})
