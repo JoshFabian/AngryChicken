@@ -13,6 +13,11 @@ a {
   cursor: pointer;
 }
 
+// Padding for badges.
+span.badge {
+  margin-left: 5px;
+}
+
 nav.navbar {
   // Active header links styling.
   a.active {

@@ -13,4 +13,5 @@ AngryChicken.Deck = DS.Model.extend
   lateGame: DS.attr('string')
   # TODO: Card combos, Hero matchups
   conclusion: DS.attr('string')
+  latestRevision: DS.belongsTo('deckRevision')
   revisions: DS.hasMany('deckRevision')

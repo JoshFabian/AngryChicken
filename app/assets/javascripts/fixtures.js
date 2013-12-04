@@ -89,10 +89,23 @@ AngryChicken.Deck.FIXTURES = [
     midGame: "Mid game description",
     lateGame: "Late game description",
     conclusion: "This is the conclusion",
+    latestRevision: 1,
     revisions: [1]
   }
 ];
 
 AngryChicken.DeckRevision.FIXTURES = [
-  {id: 1, versionNumber: 1, deck: 'vikhyat:the-little-murmage'}
+  {
+    id: 1,
+    versionNumber: 1,
+    deck: 'vikhyat:the-little-murmage',
+    memberships: [1, 2, 3, 4]
+  }
+];
+
+AngryChicken.DeckRevisionMembership.FIXTURES = [
+  {id: 1, card: 'patient-assassin', count: 2},
+  {id: 2, card: 'al-akir-the-windlord', count: 2},
+  {id: 3, card: 'backstab', count: 2},
+  {id: 4, card: 'alexstrasza', count: 2}
 ];

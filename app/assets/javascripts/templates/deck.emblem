@@ -61,3 +61,5 @@ p: em #{summary}
         p Voting and sharing stuff.
       .panel-footer
         p (A/An) #{playStyle} #{type} deck by #{link-to user.username 'user' user}
+
+    = render "deck-revision" latestRevision

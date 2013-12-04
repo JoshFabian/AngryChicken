@@ -1,0 +1,16 @@
+.panel.panel-default
+  .panel-heading
+    p Cards / Mana Cost
+    p Graph
+    p Draw Hand - Card Odds - Copy Deck
+  .panel-body
+    strong
+      | Ability
+      span.badge #{abilityMembershipCount}
+    ul = each abilityMemberships
+      li #{card.name} (#{count})
+    strong
+      | Minions
+      span.badge #{minionMembershipCount}
+    ul = each minionMemberships
+      li #{card.name} (#{count})
