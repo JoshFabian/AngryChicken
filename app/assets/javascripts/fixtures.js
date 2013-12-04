@@ -99,7 +99,7 @@ AngryChicken.DeckRevision.FIXTURES = [
     id: 1,
     versionNumber: 1,
     deck: 'vikhyat:the-little-murmage',
-    memberships: [1, 2, 3, 4]
+    memberships: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   }
 ];
 
@@ -107,5 +107,16 @@ AngryChicken.DeckRevisionMembership.FIXTURES = [
   {id: 1, card: 'patient-assassin', count: 2},
   {id: 2, card: 'al-akir-the-windlord', count: 2},
   {id: 3, card: 'backstab', count: 2},
-  {id: 4, card: 'alexstrasza', count: 2}
+  {id: 4, card: 'alexstrasza', count: 2},
+  {id: 5, card: 'backstab', count: 2},
+  {id: 6, card: 'alexstrasza', count: 2},
+  {id: 7, card: 'al-akir-the-windlord', count: 2},
+  {id: 8, card: 'patient-assassin', count: 2},
+  {id: 9, card: 'al-akir-the-windlord', count: 2},
+  {id: 10, card: 'backstab', count: 2},
+  {id: 11, card: 'alexstrasza', count: 2},
+  {id: 12, card: 'backstab', count: 2},
+  {id: 13, card: 'alexstrasza', count: 2},
+  {id: 14, card: 'al-akir-the-windlord', count: 2},
+  {id: 15, card: 'backstab', count: 2}
 ];
