@@ -1,27 +1,29 @@
-nav.navbar.navbar-inverse.navbar-fixed-top
-  .navbar-header
-    button.navbar-toggle type="button" data-toggle="collapse" data-target="#navbar-collapse"
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
-    link-to 'home' classNames='navbar-brand' | AngryChicken
+nav.navbar.navbar-inverse.navbar-fixed-top.global-header
+  .container
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target="#navbar-collapse"
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      .chicken-image
+      link-to 'home' classNames='navbar-brand'
 
-  #navbar-collapse.collapse.navbar-collapse.navbar-right
-    ul.nav.navbar-nav
-      li: link-to 'Decks' 'home'
-      li: a Tournaments
-      li: link-to 'Create Deck' 'deck.new'
+    #navbar-collapse.collapse.navbar-collapse.navbar-right
+      ul.nav.navbar-nav
+        li: link-to 'Decks' 'home'
+        li: a Tournaments
+        li: link-to 'Create Deck' 'deck.new'
 
-      if currentUser.isSignedIn
-        li.dropdown
-          a data-toggle="dropdown"
-            | Hello,
-            strong #{currentUser.username}
-            i.icon.ion-arrow-down-b
-          ul.dropdown-menu
-            li: link-to 'user' currentUser | View Profile
-            li: a{action 'logout'} Logout
-      else
-        li: link-to 'Register' 'register'
-        li.navbar-text or
-        li: link-to 'Login' 'login'
+        if currentUser.isSignedIn
+          li.dropdown
+            a data-toggle="dropdown"
+              | Hello,
+              strong #{currentUser.username}
+              i.icon.ion-arrow-down-b
+            ul.dropdown-menu
+              li: link-to 'user' currentUser | View Profile
+              li: a{action 'logout'} Logout
+        else
+          li: link-to 'Register' 'register'
+          li.navbar-text or
+          li: link-to 'Login' 'login'

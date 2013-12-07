@@ -1,1 +1,18 @@
-// base css
+@import "globals/all";
+
+a {
+ cursor: pointer;
+}
+
+body {
+  background-image: asset-url("hearth-back.jpg", image);
+  background-repeat: no-repeat;
+	background-color: $lightBlue;
+  color: $offWhite;
+  padding-top: 200px; // add padding because of fixed header
+}
+
+.profiler-results {
+  top: 51px !important; // Prevent miniprofiler from obscuring the header.
+}
+
