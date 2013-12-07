@@ -10,3 +10,34 @@
     background-size: $width $height;
   }
 }
+
+// Hero Mixin
+@mixin hero-panel($hero) {
+  .panel::after {
+    content: "";
+    background: $lightBlue;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;   
+  }
+  .panel::before {
+    content: "";
+    background-image: asset-url("#{$hero}-deck.jpg", image);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s linear;  
+  }
+  &:hover {
+    .panel::before {
+      opacity: 1;
+    }
+  }
+}

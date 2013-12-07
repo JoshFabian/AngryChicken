@@ -15,7 +15,6 @@
   }
 
   .deck-overlay {
-    // background-image: asset-url("deck-overlay.png", image);
     top: 0;
     left: 0;
     bottom: 0;
@@ -32,272 +31,38 @@
   }
 
   &.warlock {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("warlock-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("warlock");
   }
 
   &.mage {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("mage-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("mage");
   }
 
   &.druid {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("druid-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("druid");
   }
 
   &.shaman {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("shaman-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("shaman");
   }
 
   &.priest {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("priest-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("priest");
   }
 
   &.rogue {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("rogue-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("rogue");
   }
 
   &.paladin {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("paladin-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("paladin");
   }
 
   &.hunter {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("hunter-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("hunter");
   }
 
   &.warrior {
-    .panel::after {
-      content: "";
-      background: $lightBlue;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -2;   
-    }
-    .panel::before {
-      content: "";
-      background-image: asset-url("warrior-deck.jpg", image);
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.2s linear;  
-    }
-    &:hover {
-      .panel::before {
-        opacity: 1;
-      }
-    }
+    @include hero-panel("warrior");
   }
 }
