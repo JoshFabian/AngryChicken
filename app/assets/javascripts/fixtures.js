@@ -1,5 +1,12 @@
 AngryChicken.User.FIXTURES = [
-  {id: 'vikhyat', username: 'vikhyat', email: 'c@vikhyat.net', decks: ['vikhyat:the-little-murmage']}
+  {
+    id: 'vikhyat',
+    username: 'vikhyat',
+    email: 'c@vikhyat.net',
+    about: "._.",
+    avatar: "http://anime-kyokai.com/special/twitter/icon/07.png",
+    decks: ['vikhyat:the-little-murmage']
+  }
 ];
 
 AngryChicken.Card.FIXTURES = [

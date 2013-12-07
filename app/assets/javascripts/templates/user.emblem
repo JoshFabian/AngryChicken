@@ -1,0 +1,17 @@
+.row
+  .col-md-3
+    .panel.panel-default
+      .panel-body
+        img src=avatar style="width: 100%; height: auto"
+        h1 #{username}
+        p #{about}
+  .col-md-9
+    h2 style="margin-top: 0" My Decks
+    hr
+    .row = each deck in decks
+      .col-md-6
+        link-to 'deck' deck
+          .panel.panel-default
+            .panel-body
+              h4 #{deck.name}
+              p #{deck.summary}
