@@ -1,0 +1,303 @@
+@import "globals/all";
+
+.deck-panel {
+
+  .panel {
+    position: relative;
+    box-shadow: none;
+    border: 2px solid $darkBlue;
+    border-radius: 3px;
+    min-height: 240px;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .deck-overlay {
+    // background-image: asset-url("deck-overlay.png", image);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background: $lightBlue;
+    background: -moz-linear-gradient(top, rgba(43,44,51,.6) 10%, rgba(43,44,51,1) 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(43,44,51,1)), color-stop(50%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* W3C */
+  }
+
+  &.warlock {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("warlock-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.mage {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("mage-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.druid {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("druid-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.shaman {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("shaman-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.priest {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("priest-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.rogue {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("rogue-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.paladin {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("paladin-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.hunter {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("hunter-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.warrior {
+    .panel::after {
+      content: "";
+      background: $lightBlue;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;   
+    }
+    .panel::before {
+      content: "";
+      background-image: asset-url("warrior-deck.jpg", image);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      transition: all 0.2s linear;  
+    }
+    &:hover {
+      .panel::before {
+        opacity: 1;
+      }
+    }
+  }
+}

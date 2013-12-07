@@ -1,5 +1,58 @@
 .row
-  .col-md-8
-    p test
-  .col-md-4
+  .col-md-9
+    .col-md-4.deck-panel.warlock
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.mage
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.druid
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.shaman
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.priest
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.rogue
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.paladin
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.hunter
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+    .col-md-4.deck-panel.warrior
+      .panel
+        .panel-body
+          p Basic panel example
+        .deck-overlay
+
+  .col-md-3
     p test
