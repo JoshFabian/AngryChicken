@@ -4,7 +4,59 @@
 	background: $darkBlue;
   border-color: rgba(255,255,255,.06) !important;
 
-  .navbar-header { 
+  a {
+    font-family: $openSans;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .current-user {
+    > a {
+      font-size: 16px;
+      color: #818194 !important;
+      strong {
+        color: $offWhite !important;
+        font-weight: 500;
+      }
+    }
+    background: #202025;
+
+  }
+
+  .dropdown-menu {
+    background: #000;
+    background: rgba(0,0,0,.3);
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 100%;
+    > li > a {
+      font-size: 16px;
+      color: $lightPurple;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: $openSans;
+      font-weight: 100;
+      &:hover {
+        color: $offWhite;
+        background: none;
+      }
+    }
+    li:first-child {
+      padding-top: 0px;
+      border-bottom: 1px solid $lightBlue;
+    }
+  }
+
+  // Logo 
+  .navbar-brand {
+    text-indent: -400px;
+    width: 134px;
+    background: asset-url("logo.png", image) no-repeat;
+    @include image-2x("logo2x.png", 134px, 21px);
+    background-position-y: 16px;
+  }
+
+  .navbar-header {
     .chicken-image {
       width: 339px;
       height: 50px;
@@ -26,12 +78,14 @@
       }
     }
   }
+}
 
-  .navbar-brand {
-    text-indent: -200px;
-    width: 134px;
-    background: asset-url("logo.png", image) no-repeat;
-    @include image-2x("logo2x.png", 134px, 21px);
-    background-position-y: 16px;
+.navbar-inverse .navbar-nav > li > a {
+  color: $lightPurple;
+  &:hover {
+    color: $offWhite;
+  }
+  &.active {
+    color: $offWhite;
   }
 }

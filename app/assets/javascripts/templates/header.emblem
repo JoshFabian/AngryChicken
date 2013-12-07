@@ -6,19 +6,19 @@ nav.navbar.navbar-inverse.navbar-fixed-top.global-header
         span.icon-bar
         span.icon-bar
       .chicken-image
-      link-to 'home' classNames='navbar-brand'
+      link-to 'home' 'home' classNames='navbar-brand'
 
     #navbar-collapse.collapse.navbar-collapse.navbar-right
       ul.nav.navbar-nav
-        li: link-to 'Decks' 'home'
-        li: a Tournaments
-        li: link-to 'Create Deck' 'deck.new'
+        li: link-to 'decks' 'home'
+        li: a tournaments
+        li: link-to 'create deck' 'deck.new'
 
         if currentUser.isSignedIn
-          li.dropdown
+          li.dropdown.current-user
             a data-toggle="dropdown"
-              | Hello,
-              strong #{currentUser.username}
+              | Hello, &nbsp;
+              strong #{currentUser.username} &nbsp;
               i.icon.ion-arrow-down-b
             ul.dropdown-menu
               li: link-to 'user' currentUser | View Profile
