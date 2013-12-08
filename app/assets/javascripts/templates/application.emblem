@@ -1,4 +1,7 @@
 render "header"
 
-.container
-  outlet
+.main-content
+	.container
+	  outlet
+
+render "footer"

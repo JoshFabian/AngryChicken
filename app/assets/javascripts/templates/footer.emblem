@@ -1,0 +1,23 @@
+.footer
+	h1.footer-title The end? No, This is just the beginning.
+	.footer-link-wrapper.col-md-7.no-padding
+		.col-md-4.footer-link 
+			a Find a New Deck
+		.col-md-4.footer-link 
+			a Browse the Card Database
+		.col-md-4.footer-link 
+			a Explore the Forums
+		.col-md-12.text-center
+			.sharing-buttons
+				.twitter-button
+					img src="http://cl.ly/image/36313p1r1P34/twitter-follow.png"
+				.facebook-button
+					img src="http://cl.ly/image/322T2U1T0X3D/facebook-follow.png"
+	.container
+		.footer-text 
+			.col-md-6.text-left © AngryChicken. Be Cool.
+			.col-md-6.text-right 
+				a 
+					i.contact-icon.ion-ios7-email-outline
+					| &nbsp; Send us an email
+
