@@ -5,9 +5,9 @@
     p Draw Hand - Card Odds - Copy Deck
   .panel-body
     strong
-      | Ability
-      span.badge #{abilityMembershipCount}
-    ul = each abilityMemberships
+      | Spells
+      span.badge #{spellMembershipCount}
+    ul = each spellMemberships
       link-to 'card' card
         li #{card.name} (#{count})
     strong
