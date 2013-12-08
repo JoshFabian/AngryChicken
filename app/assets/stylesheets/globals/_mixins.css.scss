@@ -26,6 +26,8 @@
   .panel::before {
     content: "";
     background-image: asset-url("#{$hero}-deck.jpg", image);
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 1;
     top: 0;
     left: 0;

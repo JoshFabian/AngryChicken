@@ -11,11 +11,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Constructed
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -30,11 +30,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Constructed
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -49,11 +49,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Arena
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -68,11 +68,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Constructed
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -87,11 +87,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Arena
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -106,11 +106,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Constructed
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -125,11 +125,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Arena
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -144,11 +144,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Constructed
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -163,11 +163,11 @@
       .panel
         .panel-body.text-center
           h4 Board Contol Warlock
-          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+          p.deck-summary Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
         .deck-info.clearfix
-          .col-md-4.stat 12
-          .col-md-4.stat Arena
-          .col-md-4.stat 96%
+          .col-md-3.stat <i class="comment-icon ion-ios7-chatbubble"></i>12
+          .col-md-6.stat Arena
+          .col-md-3.stat 96%
         .panel-bottom.clearfix
           .col-md-6.deck-author.no-padding
             .col-md-4.no-padding
@@ -179,7 +179,7 @@
         .deck-overlay
 
   .col-md-3.no-padding-left
-    .title-area
+    .title-area.sidebar
       .h1.section-title Community
     .forum-widget
       ul
@@ -209,7 +209,7 @@
             small.topic-info by <span>Poach</span> 18 minutes ago - General
 
     .featured-decks
-      .title-area
+      .title-area.sidebar
         .h1.section-title Featured
 
       .featured-deck

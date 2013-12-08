@@ -23,13 +23,24 @@
     background: $darkBlue;
     text-align: center;
     .stat {
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding: 5px;
       border-right: 1px solid $lightBlue;
+      color: #a7a7c1;
       &:last-child {
         border-right: none;
       }
     }
+  }
+
+  .deck-summary {
+    color: lighten(#717383, 10);
+  }
+
+  .comment-icon {
+    font-size: 16px;
+    padding-right: 5px;
+    position: relative;
+    top: 1px;
   }
 
   .panel {

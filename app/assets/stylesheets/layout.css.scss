@@ -2,7 +2,7 @@
 
 .title-area {
   margin-bottom: 30px;
-  padding-left: 0;
+  padding-left: 15px;
 	.section-title {
     font-family: $openSans;
     font-weight: 300;
@@ -23,5 +23,8 @@
         text-decoration: none;
       }
     }
+  }
+  &.sidebar {
+    padding-left: 0;
   }
 }
