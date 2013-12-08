@@ -11,7 +11,7 @@
   }
 }
 
-// Hero Mixin
+// Hero Panel Mixin
 @mixin hero-panel($hero) {
   .panel::after {
     content: "";
@@ -40,4 +40,16 @@
       opacity: .5;
     }
   }
+}
+
+// Featured Deck Mixin
+@mixin featured-deck($hero, $left-right, $top-bottom) {
+  background-image: asset-url("#{$hero}-deck.jpg", image);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 59px;
+  opacity: .5;
+  background-position: $left-right $top-bottom;
+  background-repeat: no-repeat;
 }

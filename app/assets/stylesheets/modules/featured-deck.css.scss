@@ -10,6 +10,8 @@
 			padding: 10px;
 			display: block;
 			text-decoration: none;
+			z-index: 2;
+			position: relative;
 			.deck-author {
 				color: #717383;
 				span {
@@ -27,34 +29,50 @@
 			}
 		}
 	}
-	&.warrior {
-		.featured-deck::after {
-	    content: "";
-	    background: $lightBlue;
-	    top: 0;
-	    left: 0;
-	    bottom: 0;
-	    right: 0;
-	    position: absolute;
-	    z-index: -2;   
-	  }
-	  .featured-deck::before {
-	    content: "";
-	    background-image: asset-url("warrior-deck.jpg", image);
-	    opacity: 1;
-	    top: 0;
-	    left: 0;
-	    bottom: 0;
-	    right: 0;
-	    position: absolute;
-	    z-index: -1;
-	    transition: all 0.2s linear;  
-	  }
-	  &:hover {
-	    .panel::before {
-	      opacity: .5;
-	    }
-	  }
-	 }
+	.featured-overlay {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    background: $lightBlue;
+    background: linear-gradient(to left, rgba(35,35,41,.6) 10%,rgba(35,35,41,1) 50%);
+	}
+
+	.warrior {
+		@include featured-deck(warrior, 100px, 0);
+	}
+	.warlock {
+    @include featured-deck(warlock, 100px, 0);
+  }
+
+  .mage {
+    @include featured-deck(mage, 100px, 0);
+  }
+
+  .druid {
+    @include featured-deck(druid, 100px, 0);
+  }
+
+  .shaman {
+    @include featured-deck(shaman, 100px, 0);
+  }
+
+  .priest {
+    @include featured-deck(priest, 100px, 0);
+  }
+
+  .rogue {
+    @include featured-deck(rogue, 100px, 0);
+  }
+
+  .paladin {
+    @include featured-deck(paladin, 100px, 0);
+  }
+
+  .hunter {
+    @include featured-deck(hunter, 100px, 0);
+  }
 }
 

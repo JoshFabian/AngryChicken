@@ -211,19 +211,38 @@
     .featured-decks
       .title-area
         .h1.section-title Featured
-      .featured-deck.warrior
-        a
-          h4.deck-title Murrior Devastation
-          small.deck-author by <span>Mgrlllmgrlrrr</span>
+
       .featured-deck
         a
           h4.deck-title Murrior Devastation
           small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .warrior
+        .featured-overlay
+
       .featured-deck
         a
           h4.deck-title Murrior Devastation
           small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .mage
+        .featured-overlay
+
       .featured-deck
         a
           h4.deck-title Murrior Devastation
           small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .priest
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .hunter
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .paladin
+        .featured-overlay
