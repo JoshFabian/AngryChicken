@@ -9,8 +9,9 @@ AngryChicken.Card = DS.Model.extend
   regularImage: DS.attr('string')
   goldImage: DS.attr('string')
   cardText: DS.attr('string')
+  mechanicsUsed: DS.attr('array')
+  mechanicsMentioned: DS.attr('array')
   flavorText: DS.attr('string')
   howToGet: DS.attr('string')
-  mechanics: DS.attr('array')
   strategy: DS.attr('string')
 
