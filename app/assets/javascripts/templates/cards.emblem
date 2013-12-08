@@ -1,4 +1,10 @@
 h3 Browse Cards
 
-ul = each card in model
+h5 Filters
+
+view Ember.Select content=typeFilterOptions value=typeFilter multiple="true"
+
+h5 Cards
+
+ul = each card in filteredCards
   li: link-to 'card' card | #{card.name}
