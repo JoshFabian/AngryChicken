@@ -207,3 +207,23 @@
           a 
             h4.topic-title.truncate Recruiting for Competitive team (Please Read)
             small.topic-info by <span>Poach</span> 18 minutes ago - General
+
+    .featured-decks
+      .title-area
+        .h1.section-title Featured
+      .featured-deck.warrior
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
