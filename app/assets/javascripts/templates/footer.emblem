@@ -15,8 +15,8 @@
 					img src="http://cl.ly/image/322T2U1T0X3D/facebook-follow.png"
 	.container
 		.footer-text 
-			.col-md-6.text-left © AngryChicken. Be Cool.
-			.col-md-6.text-right 
+			.col-md-6.text-left.no-padding-left © AngryChicken. Be Cool.
+			.col-md-6.text-right.no-padding-right
 				a 
 					i.contact-icon.ion-ios7-email-outline
 					| &nbsp; Send us an email

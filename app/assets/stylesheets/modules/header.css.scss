@@ -54,6 +54,7 @@
     background: asset-url("logo.png", image) no-repeat;
     @include image-2x("logo2x.png", 134px, 21px);
     background-position: 0 16px;
+    margin-left: 0 !important;
   }
 
   .navbar-header {

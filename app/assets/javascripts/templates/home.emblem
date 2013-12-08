@@ -1,5 +1,12 @@
 .row
-  .col-md-9
+  .col-md-9.no-padding-left
+    .title-area
+      .h1.section-title Trending
+      .h1.section-title.inactive 
+        a Popular
+      .h1.section-title.inactive 
+        a Recent
+
     .col-md-4.deck-panel.warlock
       .panel
         .panel-body.text-center

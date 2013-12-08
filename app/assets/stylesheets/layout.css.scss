@@ -1,2 +1,27 @@
 @import "globals/all";
 
+.title-area {
+  margin-bottom: 30px;
+  padding-left: 15px;
+	.section-title {
+    font-family: $openSans;
+    font-weight: 300;
+    font-size: 35px;
+    display: inline-block;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-family: $openSans;
+      font-weight: 300;
+      font-size: 35px;
+      color: $offWhite;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}
