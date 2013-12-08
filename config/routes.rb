@@ -4,8 +4,10 @@ AngryChicken::Application.routes.draw do
   match '/login' => 'auth#login', via: [:get]
   match '/register' => 'auth#register', via: [:get]
 
-  match '/u/:id' => 'users#show', via: [:get]
+  match '/cards' => 'cards#index', via: [:get]
   match '/card/:slug' => 'cards#show', via: [:get]
+
+  match '/u/:id' => 'users#show', via: [:get]
   match '/u/:user_id/deck/:deck' => 'decks#show', via: [:get]
   match '/decks/new' => 'decks#new', via: [:get]
 end

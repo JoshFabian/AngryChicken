@@ -1,0 +1,4 @@
+h3 Browse Cards
+
+ul = each card in model
+  li: link-to 'card' card | #{card.name}

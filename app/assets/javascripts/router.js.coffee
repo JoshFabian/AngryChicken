@@ -6,6 +6,8 @@ AngryChicken.Router.reopen
 AngryChicken.Router.map ()->
   @route 'login'
   @route 'register'
+
+  @resource 'cards'
   @resource 'card', path: '/card/:card_id'
 
   @route 'home', path: '/'
