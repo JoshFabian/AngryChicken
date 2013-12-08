@@ -2,56 +2,173 @@
   .col-md-9
     .col-md-4.deck-panel.warlock
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.mage
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.druid
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.shaman
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.priest
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.rogue
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.paladin
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.hunter
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
     .col-md-4.deck-panel.warrior
       .panel
-        .panel-body
-          p Basic panel example
+        .panel-body.text-center
+          h4 Board Contol Warlock
+          p Benefit as much as possible from Life Tap and buffing creatures to maintain board control.
+        .deck-info.clearfix
+          .col-md-4.stat 12
+          .col-md-4.stat Arena
+          .col-md-4.stat 96%
+        .panel-bottom.clearfix
+          .col-md-6.deck-author.no-padding
+            .col-md-4.no-padding
+              .avatar
+            .col-md-6.username.no-padding Curi
+
+          .col-md-6.draw-hand
+            .draw-hand-button draw hand
         .deck-overlay
 
   .col-md-3

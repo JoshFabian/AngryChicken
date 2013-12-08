@@ -1,18 +1,7 @@
 @import "globals/all";
 
 .deck-panel {
-
-  .panel {
-    position: relative;
-    box-shadow: none;
-    border: 2px solid $darkBlue;
-    border-radius: 3px;
-    min-height: 240px;
-    background: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-  }
+  cursor: pointer;
 
   .deck-overlay {
     top: 0;
@@ -28,6 +17,68 @@
     background: -o-linear-gradient(top, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(43,44,51,.6) 10%,rgba(43,44,51,1) 50%); /* W3C */
+  }
+
+  .deck-info {
+    background: $darkBlue;
+    text-align: center;
+    .stat {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-right: 1px solid $lightBlue;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .panel {
+    position: relative;
+    box-shadow: none;
+    border: 2px solid $darkBlue;
+    border-radius: 3px;
+    min-height: 240px;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .panel-body {
+    margin-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .panel-bottom {
+    padding: 10px;
+
+    .deck-author {
+      padding-left: 0px;
+      text-align: left;
+      .avatar {
+        width: 20px;
+        height: 20px;
+        padding-left: 0;
+        background: $darkBlue;
+      }
+      .username {
+        margin-left: -5px;
+      }
+    }
+    .draw-hand {
+      padding-right: 0px;
+      text-align: center;
+      .draw-hand-button {
+        font-size: 14px;
+        border: 1px solid $darkBlue;
+        border-radius: 3px;
+        transition: all 0.2s linear;
+        &:hover {
+          border: 1px solid $offWhite;
+          transition: all 0.2s linear;
+        }
+      }
+    }
   }
 
   &.warlock {

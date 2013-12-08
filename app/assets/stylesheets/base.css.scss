@@ -25,3 +25,15 @@ h1, h2, h3, h4, h5, h6 {
   top: 51px !important; // Prevent miniprofiler from obscuring the header.
 }
 
+.no-padding-left {
+	padding-left: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
