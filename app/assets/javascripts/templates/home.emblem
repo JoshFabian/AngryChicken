@@ -40,20 +40,16 @@
 
         .col-md-3.bottom-filter
           .drop-menu
-            select.form-control
-              option Contains Card
-              option Knife Juggler
-              option Angry Chicken
-              option Murloc 
+            view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="Containing card..."
 
         .col-md-3.bottom-filter
-          .drop-menu 
+          .drop-menu
             / contains card <i class="drop-arrow ion-chevron-down"></i>
             select.form-control
               option Arena & Constructed
               option Arena Only
               option Constructed Only
-              
+
         .col-md-2
         .col-md-4.bottom-filter
           .search-bar Search by name or author ...
