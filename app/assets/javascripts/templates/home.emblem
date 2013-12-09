@@ -7,6 +7,45 @@
       .h1.section-title.inactive 
         a Recent
 
+    .filter-area.col-md-12
+      .filter-wrapper.clearfix
+        ul.input-boxes
+          li.hero-select
+            input type="checkbox" id="druid" name="hero"
+            label for="druid" <span></span>Druid
+          li.hero-select
+            input type="checkbox" id="hunter" name="hero"
+            label for="hunter" <span></span>Hunter
+          li.hero-select
+            input type="checkbox" id="mage" name="hero"
+            label for="mage" <span></span>Mage
+          li.hero-select
+            input type="checkbox" id="paladin" name="hero"
+            label for="paladin" <span></span>Paladin
+          li.hero-select
+            input type="checkbox" id="priest" name="hero"
+            label for="priest" <span></span>Priest
+          li.hero-select
+            input type="checkbox" id="rogue" name="hero"
+            label for="rogue" <span></span>Rogue
+          li.hero-select
+            input type="checkbox" id="shaman" name="hero"
+            label for="shaman" <span></span>Shaman
+          li.hero-select
+            input type="checkbox" id="warrior" name="hero"
+            label for="warrior" <span></span>Warrior
+          li.hero-select
+            input type="checkbox" id="warlock" name="hero"
+            label for="warlock" <span></span>Warlock
+
+        .col-md-3.bottom-filter
+          .drop-menu contains card <i class="drop-arrow ion-chevron-down"></i>
+        .col-md-3.bottom-filter
+          .drop-menu contains card <i class="drop-arrow ion-chevron-down"></i>
+        .col-md-2
+        .col-md-4.bottom-filter
+          .search-bar Search by name or author ...
+
     .col-md-4.deck-panel.warlock
       .panel
         .panel-body.text-center
