@@ -39,9 +39,21 @@
             label for="warlock" <span></span>Warlock
 
         .col-md-3.bottom-filter
-          .drop-menu contains card <i class="drop-arrow ion-chevron-down"></i>
+          .drop-menu
+            select.form-control
+              option Contains Card
+              option Knife Juggler
+              option Angry Chicken
+              option Murloc 
+
         .col-md-3.bottom-filter
-          .drop-menu contains card <i class="drop-arrow ion-chevron-down"></i>
+          .drop-menu 
+            / contains card <i class="drop-arrow ion-chevron-down"></i>
+            select.form-control
+              option Arena & Constructed
+              option Arena Only
+              option Constructed Only
+              
         .col-md-2
         .col-md-4.bottom-filter
           .search-bar Search by name or author ...
