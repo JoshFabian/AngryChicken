@@ -3,6 +3,4 @@ AngryChicken.HomeController = Ember.ArrayController.extend
   cards: (->
     @store.find('card')
   ).property()
-  cardNames: (->
-    @get('cards').mapBy('name')
-  ).property('cards.@each.name')
+  cardNames: Ember.computed.mapBy('cards', 'name')
