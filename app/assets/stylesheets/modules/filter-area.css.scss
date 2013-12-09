@@ -10,7 +10,7 @@
 		text-align: center;
 		border-radius: 3px;
 		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 	}
 	.input-boxes {
 		padding: 0;
@@ -42,29 +42,67 @@
     top: 4px;
 		position: relative;
     background: asset-url("checkbox-sprite.jpg", image) left top no-repeat;
- 		transition: all 0.2s linear;
 	}
 	input[type="checkbox"]:checked + label span {
     background: asset-url("checkbox-sprite.jpg", image) right top no-repeat;
 	}
 
+	input[type="radio"] {
+    display:none;
+	}
+	input[type="radio"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-right: 5px;
+    top: 4px;
+		position: relative;
+    background: asset-url("radio-sprite.jpg", image) left top no-repeat;
+	}
+	input[type="radio"]:checked + label span {
+    background: asset-url("radio-sprite.jpg", image) right top no-repeat;
+	}
+
 	.bottom-filter {
 		padding-left: 5px;
 		padding-right: 0;
+		.selectize-input {
+			background: #2b2c33;
+			background-image: none;
+			box-shadow: none !important;
+			border: none !important;
+			color: $offWhite;
+			input {
+				border: none;
+				color: $offWhite;
+			}
+			&.input-active {
+				background: #2b2c33;
+				border: none !important;
+				box-shadow: none !important;
+			}
+		}
+		.selectize-control {
+			border: none !important;
+			box-shadow: none !important;
+		}
+		.selectize-dropdown {
+			background: #2b2c33;
+			color: $offWhite;
+			border: none;
+			.active {
+				background: $darkBlue !important;
+				color: $offWhite !important;
+			} 
+		}
 		&:last-child {
 			padding-right: 5px;
 		}
 	}
 
 	.drop-menu {
-		background: #2b2c33;
-		text-transform: uppercase;
 		font-size: 13px;
 		font-weight: 500;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 15px;
-		padding-right: 15px;
 		text-align: left;
 		a {
 			color: $offWhite;
@@ -72,6 +110,17 @@
 		.drop-arrow {
 			float: right;
 			font-size: 20px;
+		}
+	}
+
+	.deck-types {
+		float: right;
+		text-align: right;
+		padding-right: 15px;
+		position: relative;
+		top: 7px;
+		ul {
+			margin-bottom: 0;
 		}
 	}
 
