@@ -1,0 +1,113 @@
+.row
+  .col-md-9.no-padding-left.choose-class
+    .title-area
+      .h1.section-title Choose Class
+    / <ul>
+    /   {{#each class in classes}}
+    /     <li><a {{action chooseDeckClass class}}>Create {{class}} Deck</a></li>
+    /   {{/each}}
+    / </ul>
+    .col-md-4.deck-panel.warlock
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.mage
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.druid
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.shaman
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.priest
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.rogue
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.paladin
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.hunter
+      .panel
+        .deck-overlay
+
+    .col-md-4.deck-panel.warrior
+      .panel
+        .deck-overlay
+
+  .col-md-3.no-padding-left
+    .title-area.sidebar
+      .h1.section-title Community
+    .forum-widget
+      ul
+        li
+          a  
+            h4.topic-title.truncate Information About Ranking Update
+            small.topic-info by <span>Josh</span> 1 minute ago - General
+        li
+          a 
+            h4.topic-title.truncate Recruiting for Competitive team (Please Read)
+            small.topic-info by <span>Poach</span> 18 minutes ago - General
+        li
+          a 
+            h4.topic-title.truncate Aggro and 1 drops in arena viability
+            small.topic-info by <span>jaman4dbz<span> 29 minutes ago - Arena
+        li 
+          a
+            h4.topic-title.truncate hunter tracking bug abusers in Arena
+            small.topic-info by <span>soylentr3d</span> 1 hour ago - Arena
+        li
+          a  
+            h4.topic-title.truncate Information About Ranking Update
+            small.topic-info by <span>Josh</span> 1 minute ago - General
+        li
+          a 
+            h4.topic-title.truncate Recruiting for Competitive team (Please Read)
+            small.topic-info by <span>Poach</span> 18 minutes ago - General
+
+    .featured-decks
+      .title-area.sidebar
+        .h1.section-title Featured
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .warrior
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .mage
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .priest
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .hunter
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .paladin
+        .featured-overlay
