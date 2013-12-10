@@ -38,7 +38,7 @@
             input type="checkbox" id="warlock" name="hero"
             label for="warlock" <span></span>Warlock
 
-        .col-md-4.bottom-filter
+        .col-md-4.bottom-filter.no-padding-left
           .drop-menu
             view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="Containing card..."
 

@@ -1,6 +1,173 @@
-h3 Browse Cards
+.row
+  .col-md-9.no-padding-left
+    .title-area
+      .h1.section-title Cards
 
-h5 Filters
+    .filter-area.col-md-12
+      .filter-wrapper.clearfix
+        ul.input-boxes
+          li.hero-select
+            input type="checkbox" id="druid" name="hero"
+            label for="druid" <span></span>Druid
+          li.hero-select
+            input type="checkbox" id="hunter" name="hero"
+            label for="hunter" <span></span>Hunter
+          li.hero-select
+            input type="checkbox" id="mage" name="hero"
+            label for="mage" <span></span>Mage
+          li.hero-select
+            input type="checkbox" id="paladin" name="hero"
+            label for="paladin" <span></span>Paladin
+          li.hero-select
+            input type="checkbox" id="priest" name="hero"
+            label for="priest" <span></span>Priest
+          li.hero-select
+            input type="checkbox" id="rogue" name="hero"
+            label for="rogue" <span></span>Rogue
+          li.hero-select
+            input type="checkbox" id="shaman" name="hero"
+            label for="shaman" <span></span>Shaman
+          li.hero-select
+            input type="checkbox" id="warrior" name="hero"
+            label for="warrior" <span></span>Warrior
+          li.hero-select
+            input type="checkbox" id="warlock" name="hero"
+            label for="warlock" <span></span>Warlock
+        .col-md-12.no-padding.clearfix
+          .col-md-3.bottom-filter
+            .drop-menu
+              view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD TYPE"
+
+          .col-md-3.bottom-filter
+            .drop-menu
+              view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD MECHANIC"
+
+          .col-md-3.bottom-filter
+            .drop-menu
+              view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="MINION RACE"
+
+          .col-md-3.deck-types.bottom-filter
+            ul
+              li.hero-select
+                input type="checkbox" id="r1" name="rr" checked="true"
+                label for="r1" <span></span> Show Neutral Cards
+
+        .third-row.col-md-12.no-padding.clearfix
+          .col-md-3.bottom-filter.no-padding-left
+            .drop-menu
+              view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD RARITY"
+
+          .col-md-3.bottom-filter
+            .number-field
+              label Attack
+              input placeholder="0"
+              label -
+              input placeholder="0"
+
+          .col-md-3.bottom-filter
+            .number-field
+              label Health
+              input placeholder="0"
+              label -
+              input placeholder="0"
+
+          .col-md-3.bottom-filter
+            .number-field
+              label Cost
+              input placeholder="0"
+              label -
+              input placeholder="0"
+          
+    .card-list.col-md-12
+      .card-list-filter
+        .search-bar.col-md-9.no-padding
+          i class="ion-search search-icon"
+          input placeholder="Search for cards by name, text or rarity ..."
+        .col-md-3.no-padding
+          view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD TYPE"
+      .card-list-wrapper.clearfix
+        .col-md-12
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+
+  .col-md-3.no-padding-left
+    .title-area.sidebar
+      .h1.section-title Community
+    .forum-widget
+      ul
+        li
+          a  
+            h4.topic-title.truncate Information About Ranking Update
+            small.topic-info by <span>Josh</span> 1 minute ago - General
+        li
+          a 
+            h4.topic-title.truncate Recruiting for Competitive team (Please Read)
+            small.topic-info by <span>Poach</span> 18 minutes ago - General
+        li
+          a 
+            h4.topic-title.truncate Aggro and 1 drops in arena viability
+            small.topic-info by <span>jaman4dbz<span> 29 minutes ago - Arena
+        li 
+          a
+            h4.topic-title.truncate hunter tracking bug abusers in Arena
+            small.topic-info by <span>soylentr3d</span> 1 hour ago - Arena
+        li
+          a  
+            h4.topic-title.truncate Information About Ranking Update
+            small.topic-info by <span>Josh</span> 1 minute ago - General
+        li
+          a 
+            h4.topic-title.truncate Recruiting for Competitive team (Please Read)
+            small.topic-info by <span>Poach</span> 18 minutes ago - General
+
+    .featured-decks
+      .title-area.sidebar
+        .h1.section-title Featured
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .warrior
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .mage
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .priest
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .hunter
+        .featured-overlay
+
+      .featured-deck
+        a
+          h4.deck-title Murrior Devastation
+          small.deck-author by <span>Mgrlllmgrlrrr</span>
+        .paladin
+        .featured-overlay
 
 view Ember.Select content=typeFilterOptions value=typeFilter multiple="true"
 
