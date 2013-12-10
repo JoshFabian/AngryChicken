@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-content {
-  background-image: asset-url("hearth-back.jpg", image);
+  background-image: asset-url("hearth-back.jpg");
   background-repeat: no-repeat;
   background-color: $lightBlue;
   padding-top: 200px;

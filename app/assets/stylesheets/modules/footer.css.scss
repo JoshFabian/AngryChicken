@@ -1,14 +1,14 @@
 @import "globals/all";
 
 .footer {
-	width: 100%;
-	position: fixed;
-	bottom: 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
   min-height: 280px;
   z-index: -3;
-  background-image: asset-url("footerbg.jpg", image);
-  background-repeat: no-repeat; 
-	background-color: $darkBlue;
+  background-image: asset-url("footerbg.jpg");
+  background-repeat: no-repeat;
+  background-color: $darkBlue;
   a {
     color: $lightPurple;
     &:hover {

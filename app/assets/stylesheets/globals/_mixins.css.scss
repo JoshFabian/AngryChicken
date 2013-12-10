@@ -25,7 +25,7 @@
   }
   .panel::before {
     content: "";
-    background-image: asset-url("#{$hero}-deck.jpg", image);
+    background-image: asset-url("#{$hero}-deck.jpg");
     background-repeat: no-repeat;
     opacity: 1;
     top: 0;
@@ -45,7 +45,7 @@
 
 // Featured Deck Mixin
 @mixin featured-deck($hero, $left-right, $top-bottom) {
-  background-image: asset-url("#{$hero}-deck.jpg", image);
+  background-image: asset-url("#{$hero}-deck.jpg");
   position: absolute;
   width: 100%;
   top: 0;

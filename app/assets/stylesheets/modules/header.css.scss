@@ -1,7 +1,7 @@
 @import "globals/all";
 
 .global-header {
-	background: $darkBlue;
+  background: $darkBlue;
   border-color: rgba(255,255,255,.06) !important;
 
   a {
@@ -47,11 +47,11 @@
     }
   }
 
-  // Logo 
+  // Logo
   .navbar-brand {
     text-indent: -400px;
     width: 134px;
-    background: asset-url("logo.png", image) no-repeat;
+    background: asset-url("logo.png") no-repeat;
     @include image-2x("logo2x.png", 134px, 21px);
     background-position: 0 16px;
     margin-left: 0 !important;
@@ -61,7 +61,7 @@
     .chicken-image {
       width: 339px;
       height: 50px;
-      background: asset-url("angrychicken.png", image) no-repeat;
+      background: asset-url("angrychicken.png") no-repeat;
       position: absolute;
       left: 0;
       z-index: -1;

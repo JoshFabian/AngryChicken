@@ -1,206 +1,206 @@
 @import "globals/all";
 
 .filter-area {
-	padding: 15px;
-	padding-top: 0;
-	.filter-wrapper {
-		background: $darkBlue;
-		padding-left: 5px;
-		padding-right: 5px;
-		text-align: center;
-		border-radius: 3px;
-		padding-top: 10px;
-		padding-bottom: 5px;
-	}
-	.input-boxes {
-		padding: 0;
-		border-bottom: 1px solid $lightBlue;
-	}
-	.hero-select {
-		display: inline;
-		padding-right: 20px;
-		&:last-child {
-			padding-right: 0;
-		}
-	}
+  padding: 15px;
+  padding-top: 0;
+  .filter-wrapper {
+    background: $darkBlue;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .input-boxes {
+    padding: 0;
+    border-bottom: 1px solid $lightBlue;
+  }
+  .hero-select {
+    display: inline;
+    padding-right: 20px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 
-	// Style Form Inputs
-	label {
-		position: relative;
-		top: -4px;
-		color: #d2d4d8;
-		cursor: pointer;
-	}
-	input[type="checkbox"] {
+  // Style Form Inputs
+  label {
+    position: relative;
+    top: -4px;
+    color: #d2d4d8;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
     display:none;
-	}
-	input[type="checkbox"] + label span {
+  }
+  input[type="checkbox"] + label span {
     display:inline-block;
     width:19px;
     height:18px;
     margin-right: 5px;
     top: 4px;
-		position: relative;
-    background: asset-url("checkbox-sprite.jpg", image) left top no-repeat;
-	}
-	input[type="checkbox"]:checked + label span {
-    background: asset-url("checkbox-sprite.jpg", image) right top no-repeat;
-	}
+    position: relative;
+    background: asset-url("checkbox-sprite.jpg") left top no-repeat;
+  }
+  input[type="checkbox"]:checked + label span {
+    background: asset-url("checkbox-sprite.jpg") right top no-repeat;
+  }
 
-	input[type="radio"] {
+  input[type="radio"] {
     display:none;
-	}
-	input[type="radio"] + label span {
+  }
+  input[type="radio"] + label span {
     display:inline-block;
     width:20px;
     height:20px;
     margin-right: 5px;
     top: 4px;
-		position: relative;
-    background: asset-url("radio-sprite.jpg", image) left top no-repeat;
-	}
-	input[type="radio"]:checked + label span {
-    background: asset-url("radio-sprite.jpg", image) right top no-repeat;
-	}
+    position: relative;
+    background: asset-url("radio-sprite.jpg") left top no-repeat;
+  }
+  input[type="radio"]:checked + label span {
+    background: asset-url("radio-sprite.jpg") right top no-repeat;
+  }
 
-	.bottom-filter {
-		padding-left: 5px;
-		padding-right: 0;
-		.selectize-input {
-			background: #2b2c33;
-			background-image: none;
-			box-shadow: none !important;
-			border: none !important;
-			color: $offWhite;
-			input {
-				border: none;
-				color: $offWhite;
-			}
-			&.input-active {
-				background: #2b2c33;
-				border: none !important;
-				box-shadow: none !important;
-			}
-		}
-		.selectize-control {
-			border: none !important;
-			box-shadow: none !important;
-		}
-		.selectize-dropdown {
-			background: #2b2c33;
-			color: $offWhite;
-			border: none;
-			.active {
-				background: $darkBlue !important;
-				color: $offWhite !important;
-			} 
-		}
-		&:last-child {
-			padding-right: 5px;
-		}
-	}
+  .bottom-filter {
+    padding-left: 5px;
+    padding-right: 0;
+    .selectize-input {
+      background: #2b2c33;
+      background-image: none;
+      box-shadow: none !important;
+      border: none !important;
+      color: $offWhite;
+      input {
+        border: none;
+        color: $offWhite;
+      }
+      &.input-active {
+        background: #2b2c33;
+        border: none !important;
+        box-shadow: none !important;
+      }
+    }
+    .selectize-control {
+      border: none !important;
+      box-shadow: none !important;
+    }
+    .selectize-dropdown {
+      background: #2b2c33;
+      color: $offWhite;
+      border: none;
+      .active {
+        background: $darkBlue !important;
+        color: $offWhite !important;
+      } 
+    }
+    &:last-child {
+      padding-right: 5px;
+    }
+  }
 
-	.drop-menu {
-		font-size: 13px;
-		font-weight: 500;
-		text-align: left;
-		a {
-			color: $offWhite;
-		}
-		.drop-arrow {
-			float: right;
-			font-size: 20px;
-		}
-	}
+  .drop-menu {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    a {
+      color: $offWhite;
+    }
+    .drop-arrow {
+      float: right;
+      font-size: 20px;
+    }
+  }
 
-	.deck-types {
-		float: right;
-		text-align: right;
-		padding-right: 15px;
-		position: relative;
-		top: 8px;
-		ul {
-			margin-bottom: 0;
-			padding-left: 0;
-		}
-	}
+  .deck-types {
+    float: right;
+    text-align: right;
+    padding-right: 15px;
+    position: relative;
+    top: 8px;
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+  }
 
-	.number-field {
-		text-align: right;
-		label {
-			padding-left: 10px;
-			padding-right: 10px;
-			height: 34px;
-			position: relative;
-			top: 0;
-			margin-bottom: 0;
-		}
-		input {
-			background: #4f4f54;
-			border: none;
-			box-shadow: none;
-			color: #fff;
-			width: 40px;
-			height: 34px;
-			display: inline-block;
-			text-align: center;
-			font-size: 16px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
+  .number-field {
+    text-align: right;
+    label {
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 34px;
+      position: relative;
+      top: 0;
+      margin-bottom: 0;
+    }
+    input {
+      background: #4f4f54;
+      border: none;
+      box-shadow: none;
+      color: #fff;
+      width: 40px;
+      height: 34px;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 
-	.third-row {
-		border-top: 1px solid $lightBlue;
-		padding-top: 10px;
-		margin-top: 5px;
-	}
+  .third-row {
+    border-top: 1px solid $lightBlue;
+    padding-top: 10px;
+    margin-top: 5px;
+  }
 
-	.search-bar {
-		background: #2b2c33;
-		font-size: 15px;
-		font-weight: 500;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 15px;
-		padding-right: 15px;
-		text-align: left;
-	}
+  .search-bar {
+    background: #2b2c33;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+  }
 }
 .card-list-filter {
-	.sort-by {
-		.selectize-input {
-			background: #2b2c33;
-			background-image: none;
-			box-shadow: none !important;
-			border: none !important;
-			color: $offWhite;
-			height: 40px;
-			border-radius: 0;
-			line-height: 24px;
-			input {
-				border: none;
-				color: $offWhite;
-			}
-			&.input-active {
-				background: #2b2c33;
-				border: none !important;
-				box-shadow: none !important;
-			}
-		}
-		.selectize-control {
-			border: none !important;
-			box-shadow: none !important;
-		}
-		.selectize-dropdown {
-			background: #2b2c33;
-			color: $offWhite;
-			border: none;
-			.active {
-				background: $darkBlue !important;
-				color: $offWhite !important;
-			} 
-		}
-	}
+  .sort-by {
+    .selectize-input {
+      background: #2b2c33;
+      background-image: none;
+      box-shadow: none !important;
+      border: none !important;
+      color: $offWhite;
+      height: 40px;
+      border-radius: 0;
+      line-height: 24px;
+      input {
+        border: none;
+        color: $offWhite;
+      }
+      &.input-active {
+        background: #2b2c33;
+        border: none !important;
+        box-shadow: none !important;
+      }
+    }
+    .selectize-control {
+      border: none !important;
+      box-shadow: none !important;
+    }
+    .selectize-dropdown {
+      background: #2b2c33;
+      color: $offWhite;
+      border: none;
+      .active {
+        background: $darkBlue !important;
+        color: $offWhite !important;
+      } 
+    }
+  }
 }
