@@ -84,21 +84,34 @@
           i class="ion-search search-icon"
           input placeholder="Search for cards by name, text or rarity ..."
         .col-md-3.no-padding
-          view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD TYPE"
+          .sort-by
+            view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="SORT BY"
       .card-list-wrapper.clearfix
         .col-md-12
           .col-md-3.single-card
             a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_032.png"
           .col-md-3.single-card
             a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_105.png"
           .col-md-3.single-card
             a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_565.png"
           .col-md-3.single-card
             a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png"
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_084.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_020.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_050.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_064.png"
+          .col-md-3.single-card
+            a
+              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_362.png"
 
   .col-md-3.no-padding-left
     .title-area.sidebar

@@ -168,3 +168,39 @@
 		text-align: left;
 	}
 }
+.card-list-filter {
+	.sort-by {
+		.selectize-input {
+			background: #2b2c33;
+			background-image: none;
+			box-shadow: none !important;
+			border: none !important;
+			color: $offWhite;
+			height: 40px;
+			border-radius: 0;
+			line-height: 24px;
+			input {
+				border: none;
+				color: $offWhite;
+			}
+			&.input-active {
+				background: #2b2c33;
+				border: none !important;
+				box-shadow: none !important;
+			}
+		}
+		.selectize-control {
+			border: none !important;
+			box-shadow: none !important;
+		}
+		.selectize-dropdown {
+			background: #2b2c33;
+			color: $offWhite;
+			border: none;
+			.active {
+				background: $darkBlue !important;
+				color: $offWhite !important;
+			} 
+		}
+	}
+}

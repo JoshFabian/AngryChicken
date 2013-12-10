@@ -36,7 +36,17 @@
 }
 
 .single-card {
+  padding: 0;
+  margin-top: -15px;
   .card-img {
     max-width: 100%;
+    transition: top 0.2s linear;
+    position: relative;
+    top: 0;
+    &:hover {
+      top: -10px;
+      opacity: .7;
+      transition: top 0.2s linear;
+    }
   }
 }
