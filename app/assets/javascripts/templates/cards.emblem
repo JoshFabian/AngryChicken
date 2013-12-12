@@ -5,34 +5,11 @@
 
     .filter-area.col-md-12
       .filter-wrapper.clearfix
-        ul.input-boxes
+        ul.input-boxes = each classOptions
           li.hero-select
-            input type="checkbox" id="druid" name="hero"
-            label for="druid" <span></span>Druid
-          li.hero-select
-            input type="checkbox" id="hunter" name="hero"
-            label for="hunter" <span></span>Hunter
-          li.hero-select
-            input type="checkbox" id="mage" name="hero"
-            label for="mage" <span></span>Mage
-          li.hero-select
-            input type="checkbox" id="paladin" name="hero"
-            label for="paladin" <span></span>Paladin
-          li.hero-select
-            input type="checkbox" id="priest" name="hero"
-            label for="priest" <span></span>Priest
-          li.hero-select
-            input type="checkbox" id="rogue" name="hero"
-            label for="rogue" <span></span>Rogue
-          li.hero-select
-            input type="checkbox" id="shaman" name="hero"
-            label for="shaman" <span></span>Shaman
-          li.hero-select
-            input type="checkbox" id="warrior" name="hero"
-            label for="warrior" <span></span>Warrior
-          li.hero-select
-            input type="checkbox" id="warlock" name="hero"
-            label for="warlock" <span></span>Warlock
+            = input type="checkbox" id=name checked=isSelected
+            label for=name <span></span> #{name}
+
         .col-md-12.no-padding.clearfix
           .col-md-3.bottom-filter
             .drop-menu
@@ -49,8 +26,8 @@
           .col-md-3.deck-types.bottom-filter
             ul
               li.hero-select
-                input type="checkbox" id="r1" name="rr" checked="true"
-                label for="r1" <span></span> Show Neutral Cards
+                = input type="checkbox" id="showNeutral" checked=showNeutral
+                label for="showNeutral" <span></span> Show Neutral Cards
 
         .third-row.col-md-12.no-padding.clearfix
           .col-md-3.bottom-filter.no-padding-left
