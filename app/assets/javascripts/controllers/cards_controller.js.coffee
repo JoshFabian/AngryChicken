@@ -1,11 +1,13 @@
 AngryChicken.CardsController = Ember.ArrayController.extend
-  typeFilter: []
+  typeFilter: null
   typeFilterOptions: ["Minion", "Spell", "Weapon"]
 
   filteredCards: (->
     typeFilter = @get('typeFilter')
-    if typeFilter.length == 0
-      typeFilter = @get('typeFilterOptions')
 
-    @get('content').filter((card) -> typeFilter.contains(card.get('type')))
-  ).property('typeFilter.@each', 'content.@each')
+    cards = @get('content')
+    if typeFilter = @get('typeFilter')
+      cards = cards.filter((card) -> typeFilter == card.get('type'))
+
+    cards
+  ).property('typeFilter', 'content.@each')

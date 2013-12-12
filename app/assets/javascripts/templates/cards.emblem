@@ -36,7 +36,7 @@
         .col-md-12.no-padding.clearfix
           .col-md-3.bottom-filter
             .drop-menu
-              view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD TYPE"
+              view Ember.Select content=typeFilterOptions selection=typeFilter prompt="All Card Types"
 
           .col-md-3.bottom-filter
             .drop-menu
@@ -77,7 +77,7 @@
               input placeholder="0"
               label -
               input placeholder="0"
-          
+
     .card-list.col-md-12
       .card-list-filter
         .search-bar.col-md-9.no-padding
@@ -85,33 +85,12 @@
           input placeholder="Search for cards by name, text or rarity ..."
         .col-md-3.no-padding
           .sort-by
-            view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="SORT BY"
+            view Ember.Select contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="SORT BY"
+
       .card-list-wrapper.clearfix
         .col-md-12
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_032.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_105.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_565.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_084.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_020.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_050.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_064.png"
-          .col-md-3.single-card
-            a
-              img class="card-img" src="http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_362.png"
+          each card in filteredCards itemViewClass="AngryChicken.FilteredCardView"
+
 
   .col-md-3.no-padding-left
     .title-area.sidebar
@@ -182,9 +161,4 @@
         .paladin
         .featured-overlay
 
-view Ember.Select content=typeFilterOptions value=typeFilter multiple="true"
 
-h5 Cards
-
-ul = each card in filteredCards
-  li: link-to 'card' card | #{card.name}
