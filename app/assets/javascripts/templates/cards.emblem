@@ -36,11 +36,11 @@
         .col-md-12.no-padding.clearfix
           .col-md-3.bottom-filter
             .drop-menu
-              view Ember.Select content=typeFilterOptions selection=typeFilter prompt="All Card Types"
+              view Ember.Select content=typeOptions selection=typeFilter prompt="All Card Types"
 
           .col-md-3.bottom-filter
             .drop-menu
-              view Ember.Selectize contentBinding="controller.cardNames" selectionBinding="controller.containsCard" placeholder="CARD MECHANIC"
+              view Ember.Select content=mechanicOptions selection=mechanicFilter prompt="All Mechanics"
 
           .col-md-3.bottom-filter
             .drop-menu

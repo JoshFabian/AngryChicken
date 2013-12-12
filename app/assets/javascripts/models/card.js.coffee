@@ -15,3 +15,7 @@ AngryChicken.Card = DS.Model.extend
   howToGet: DS.attr('string')
   strategy: DS.attr('string')
 
+  mechanics: (->
+    @get('mechanicsUsed').concat @get('mechanicsMentioned')
+  ).property('mechanicsUsed', 'mechanicsMentioned')
+
